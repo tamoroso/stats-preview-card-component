@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color:hsl(233, 47%, 7%);
+}
+
+.card-container{
+    width: 80%;
+    min-height: 446px;
+    background-color: hsl(244, 38%, 16%);
+    margin: 200px auto;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1200px){
+    body .card-container{
+        flex-direction: column;
+        align-items: center;
+        margin: 80px auto;
+    }
+
+    .card-container .text-card{
+        text-align: center;
+        height: 80%;
+        width: 100%;
+        padding: 30px 20px 30px 20px;
+        order: 2;
+    }
+    
+    .card-container .text-card h1{
+        font-size: 30px ;
+    }
+
+    .card-container .text-card p{
+        padding: 0;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+
+    .card-container ul{
+        flex-direction: column;
+        height: 250px;
+        padding: 0;
+    }
+
+    .card-container .img-card{
+        background: url("/images/image-header-mobile.jpg") no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        order: 1;
+    }
+}
+
+.text-card{
+    width: 50%;
+    padding: 80px 80px 80px 80px;
+    font-family: 'Inter';
+}
+
+.text-card h1{
+    font-family: 'Lexend Deca';
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.text-card p{
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 100px;
+    line-height: 2;
+    padding-right: 50px;
+}
+
+h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: none;
+    line-height: 1.5;
+    padding-right: 50px ;
+}
+
+.bold{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.capital{
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: 0.1em;
+}
+
+.img-card{
+    background: url("/images/image-header-desktop.jpg") no-repeat;
+    background-size: cover;
+    width: 50%;
+    display: flex;
+}
+
+.img-card:before{
+    content: '';
+    background: hsl(277, 64%, 61%);
+    opacity: 0.55;
+    width: 100%;
+}
