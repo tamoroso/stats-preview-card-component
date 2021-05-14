@@ -16,10 +16,10 @@ body{
 }
 
 .card-container{
-    width: 80%;
-    height: 446px;
+    max-width: 80%;
+    min-height: 446px;
     background-color: hsl(244, 38%, 16%);
-    margin: 11% auto;
+    margin: 70px auto;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
